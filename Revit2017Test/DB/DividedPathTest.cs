@@ -16,7 +16,6 @@ namespace Revit2017Test.DB
         {
             UIDocument doc = commandData.Application.ActiveUIDocument;
 
-
             using(Transaction trans = new Transaction(doc.Document))
             {
                 trans.Start("Select model curves in revit document");
